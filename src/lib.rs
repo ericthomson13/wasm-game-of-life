@@ -84,6 +84,15 @@ impl Universe {
     }
     count
   }
+  pub fn width(&self) -> u32 {
+    self.width
+  }
+  pub fn height(&self) -> u32 {
+    self.height
+  }
+  pub fn cells(&self) -> *cont Cell {
+    self.cells.as_ptr()
+  }
 }
 use std::fmt;
 impl fmt::Display for Universe {
